@@ -10,6 +10,13 @@
             arrayValue = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
             arrayIndex = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
+            //Union(0, 1);
+            //Union(0, 2);
+            //Union(1, 3);
+            //Union(4, 8);
+            //Union(5, 6);
+            //Union(5, 7);
+
         }
 
 
@@ -65,8 +72,18 @@
                 arrayValue[keyindex1] = root;
 
             }
+        }
 
+        public bool CheckVerticesConnected(int value1, int value2)
+        {
+            var rootValue1 = FindRoot(value1);
+            var rootValue2 = FindRoot(value2);
 
+            if (rootValue1==rootValue2)
+            {
+                return true;
+            }
+            return false;
 
 
         }

@@ -5,24 +5,28 @@ namespace leetCodePlayground
 {
     internal class Programm
     {
-        static void Main(string[] args)
-        {
+        //static void Main(string[] args)
+        //{
 
-            var test = new DisjointSetObj();
+        //    var DisjointSet = new DisjointSetObj();
 
 
-            test.Union(0, 1);
-            test.Union(0, 2);
-            test.Union(1, 3);
-
-            
-
-            Console.WriteLine(""+test.FindRoot(3));
-
-            Console.ReadKey();
+        //    DisjointSet.Union(0, 1);
+        //    DisjointSet.Union(0, 2);
+        //    DisjointSet.Union(1, 3);
+        //    DisjointSet.Union(4, 8);
+        //    DisjointSet.Union(5, 6);
+        //    DisjointSet.Union(5, 7);
 
 
 
-        }
+
+        //    Console.WriteLine(""+DisjointSet.FindRoot(3));
+
+        //    Console.ReadKey();
+
+
+
+        //}
     }
 }
