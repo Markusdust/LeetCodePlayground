@@ -97,6 +97,27 @@ namespace DisjointSet.test
         }
 
 
+        [Fact]
+        public void CheckIfConnected_7And8_ThenReturn_False()
+        {
+            //Arrange
+            var disjointSet = new DisjointSetObj();
+
+            disjointSet.Union(0, 1);
+            disjointSet.Union(0, 2);
+            disjointSet.Union(1, 3);
+            disjointSet.Union(4, 8);
+            disjointSet.Union(5, 6);
+            disjointSet.Union(5, 7);
+
+            //Act
+            var result = disjointSet.CheckVerticesConnected(7, 8);
+
+            //Assert
+            result.Should().Be(false);
+
+        }
+
 
     }
 }
