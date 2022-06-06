@@ -35,7 +35,7 @@ namespace DisjointSet.test
 
 
         [Fact]
-        public void FindRoot_Of5_ThenReturn_0()
+        public void FindRoot_Of5_ThenReturn_5()
         {
             //Arrange
             var disjointSet = new DisjointSetObj();
